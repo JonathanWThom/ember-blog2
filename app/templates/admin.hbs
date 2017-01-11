@@ -2,7 +2,7 @@ This is the admin page! Blog posts can be added, deleted, and updated here. Also
 
 
 {{#each model as |post|}}
-  {{admin-tile post=post destroyPost="destroyPost" update="update"}}
+  {{admin-tile post=post destroyPost="destroyPost" update="update" deleteComment="deleteComment"}}
 {{/each}}
 
 {{new-post savePost="savePost"}}

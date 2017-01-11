@@ -1,3 +1,6 @@
 {{post.title}}
+{{#each post.comments as |comment|}}
+  {{admin-comment comment=comment deleteComment="deleteComment"}}
+{{/each}}
 {{update-post post=post update="update"}}
 <button class="btn" {{action 'destroyPost' post}}>Delete Post</button>
