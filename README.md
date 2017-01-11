@@ -1,3 +1,10 @@
+### To Do
+- Limit the posts on the first page to the most recent 5.
+- Add individual post pages to navigate to
+- Add categories for posts and allow users to filter by categories.
+- Add tags to post. Allow users to filter all posts based on tags.
+
+
 # blog
 
 This README outlines the details of collaborating on this Ember application.
