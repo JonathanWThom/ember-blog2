@@ -1,0 +1,21 @@
+{{#if addNewPost}}
+  <h2>New Post</h2>
+  <form>
+    <div class="input-field col s6">
+      {{input value=title id="title" placeholder="Title"}}
+    </div>
+    <div class="input-field col s6">
+      {{input value=date id="date" placeholder="Date"}}
+    </div>
+    <!-- make date auto fill eventually -->
+    <div class="input-field col s6">
+      {{input value=content id="content" placeholder="Content"}}
+    </div>
+    <div class="input-field col s6">
+      {{input value=image id="image" placeholder="Image URL"}}
+    </div>
+    <button class="btn" {{action 'savePost'}}>Save Post</button>
+  </form>
+{{else}}
+  <button class="btn" {{action 'postFormShow'}}>Add New Post</button>
+{{/if}}

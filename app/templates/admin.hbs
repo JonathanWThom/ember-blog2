@@ -1,0 +1,8 @@
+This is the admin page! Blog posts can be added, deleted, and updated here. Also comments moderated, eventually.
+
+
+{{#each model as |post|}}
+  {{admin-tile post=post destroyPost="destroyPost"}}
+{{/each}}
+
+{{new-post savePost="savePost"}}
