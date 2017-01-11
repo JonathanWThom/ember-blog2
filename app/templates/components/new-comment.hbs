@@ -1,0 +1,17 @@
+{{#if addNewComment}}
+<h2>New Comment</h2>
+  <form>
+    <div class="input-field col s6">
+      {{input value=author id="author" placeholder="Author"}}
+    </div>
+    <div class="input-field col s6">
+      {{input value=date id="date" placeholder="Date"}}
+    </div>
+    <div class="input-field col s6">
+      {{input value=content id="content" placeholder="Comment"}}
+    </div>
+    <button class="btn" {{action 'saveComment'}}>Post Comment</button>
+  </form>
+{{else}}
+  <button class="btn"{{action 'commentFormShow'}}>Leave a Comment</button>
+{{/if}}
