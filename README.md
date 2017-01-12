@@ -10,6 +10,11 @@
 - Include a "Recent Comments" feed on the homepage that displays the newest comments (for any/all blog posts) displayed as links. - Clicking a link should take the user to the post this comment belongs to.
 - Add tags to post. Allow users to filter all posts based on tags.
 
+- 2 posts to a row
+- styling
+- better source for images - hard code in or different hosting site?
+- make admin hidden and authenticated
+
 
 # blog
 
