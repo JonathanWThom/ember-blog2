@@ -1,6 +1,10 @@
 <p>This is the home page!
 All blog posts will be listed here, eventually!</p>
 
-{{#each model as |post|}}
+{{#each model.posts as |post|}}
   {{post-tile post=post}}
+{{/each}}
+
+{{#each model.comments as |comment|}}
+  {{recent-comment comment=comment}}
 {{/each}}
