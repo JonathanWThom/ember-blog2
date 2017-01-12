@@ -14,6 +14,8 @@
 - styling
 - better source for images - hard code in or different hosting site?
 - make admin hidden and authenticated
+- make firebase server private
+- navbar resize
 
 
 # blog

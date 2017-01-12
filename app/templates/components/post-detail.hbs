@@ -6,7 +6,7 @@
 <p>Comments</p>
 <ul>
   {{#each post.comments as |comment|}}
-    {{comment-tile comment=comment}}
+    {{comment-tile comment=comment updateComment="updateComment"}}
   {{/each}}
 </ul>
 <!--  add comments and comments form here eventually-->

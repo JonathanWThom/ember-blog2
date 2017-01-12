@@ -7,14 +7,22 @@ export default Ember.Route.extend({
   actions: {
     saveComment(params) {
       var newComment = this.store.createRecord('comment', params);
-      console.log(newComment);
       var post = params.post;
       post.get('comments').addObject(newComment);
-      //not getting into the loop//
       newComment.save().then(function() {
         return post.save();
       });
       this.transitionTo('post', post);
+    },
+    updateComment(comment, params) {
+      Object.keys(params).forEach(function(key) {
+        if(params[key]!==undefined) {
+          comment.set(key, params[key]);
+        }
+      });
+
+      comment.save();
+      this.transitionTo('post');
     }
   }
 });

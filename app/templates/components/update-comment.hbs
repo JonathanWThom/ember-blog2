@@ -1,0 +1,16 @@
+{{#if updateCommentForm}}
+  <form>
+    <div class="input-field">
+      {{input value=author id="author" placeholder=comment.author}}
+    </div>
+    <div class="input-field">
+      {{input value=date id="date" placeholder=comment.date}}
+    </div>
+    <div class="input-field">
+      {{input value=content id="content" placeholder=comment.content}}
+    </div>
+    <button {{action 'updateComment' comment}}>Save</button>
+  </form>
+{{else}}
+  <button {{action 'updateCommentForm'}}>Update</button>
+{{/if}}
