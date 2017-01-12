@@ -1,7 +1,13 @@
 ### To Do
+- Need to deal with empty fields for comments
 - Limit the posts on the first page to the most recent 5.
 - Add individual post pages to navigate to
 - Add categories for posts and allow users to filter by categories.
+- Add tags to post. Allow users to filter all posts based on tags.
+- Give users the opportunity to update the content of their comments.
+- Provide the option to delete comments.
+- Further exploration
+- Include a "Recent Comments" feed on the homepage that displays the newest comments (for any/all blog posts) displayed as links. - Clicking a link should take the user to the post this comment belongs to.
 - Add tags to post. Allow users to filter all posts based on tags.
 
 
